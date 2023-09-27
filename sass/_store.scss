@@ -1,0 +1,49 @@
+.store {
+  width: 571px;
+  height: 187px;
+  padding: 32px 56px;
+  background-color: #7296ab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 8px;
+  .box {
+    position: relative;
+    display: flex;
+    width: 268px;
+  }
+  .heading {
+    color: #d1e2eb;
+    line-height: calc(20 / 32);
+  }
+  .sub-heading {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #fff;
+    margin-top: 23px;
+    margin-bottom: 24px;
+  }
+  input {
+    border-style: none;
+    &::placeholder {
+      color: #9d9d9d;
+    }
+  }
+  .email {
+    width: 268px;
+    height: 36px;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  .send {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,124 @@
+.flash {
+  margin-top: 84px;
+  padding: 0 90px;
+  &-text {
+    display: flex;
+    position: relative;
+    margin-bottom: 48px;
+    .text500 {
+      line-height: 1;
+    }
+    .boxed {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: flex;
+      transform: translateY(-50%);
+    }
+    .text12-white {
+      color: #262626;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 20px;
+    .card {
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      height: 380px;
+      border-radius: 8px;
+      .text800 {
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #9d9d9d;
+      }
+      .clock {
+        display: flex;
+        gap: 0 6px;
+        &-run {
+          font-weight: 800;
+          font-size: 18px;
+          line-height: calc(30 / 18);
+          color: #262626;
+        }
+      }
+      .time {
+        display: flex;
+        gap: 27px;
+        .text12-white {
+          color: #9d9d9d;
+        }
+      }
+      .bag {
+        margin: 16px 0 24px;
+      }
+      .info {
+        width: 151px;
+        position: relative;
+        .the-name {
+          position: absolute;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: calc(25 / 16);
+          color: #262626;
+        }
+        .about {
+          position: absolute;
+          top: 31px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: calc(25 / 12);
+          color: #555;
+        }
+      }
+      .rate {
+        position: absolute;
+        top: 62px;
+        display: flex;
+        .turn {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: calc(25 / 12);
+          color: #555;
+          padding: 0 8px;
+        }
+      }
+      .money {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 14px;
+        position: absolute;
+        top: 93px;
+        &-sale {
+          color: #ff2e00;
+        }
+        .cost {
+          text-decoration: line-through;
+          color: #555;
+        }
+        .money-saleoff {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ff2e00;
+          border-radius: 2.057px;
+          width: 36px;
+          height: 16px;
+        }
+        .sale-off {
+          font-weight: 600;
+          font-size: 8px;
+          font-family: "Inter", sans-serif;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

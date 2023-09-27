@@ -1,0 +1,27 @@
+.phone {
+  margin-top: 68px;
+  padding: 0 90px;
+  background-color: #f7ddd0;
+  display: flex;
+  gap: 0 70px;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .header-text {
+      margin-bottom: 17px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: calc(20 / 24);
+      color: #465d6b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .sub-text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      color: #555;
+    }
+  }
+}

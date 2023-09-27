@@ -1,0 +1,67 @@
+.hero {
+  display: flex;
+  position: relative;
+  .sale {
+    position: absolute;
+    left: 433px;
+    top: 149px;
+    z-index: 1;
+    &-off {
+      height: 123px;
+      width: 228px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+    &-info {
+      font-size: 20px;
+      color: #262626;
+    }
+    &-detail {
+      font-size: 20px;
+      color: #ff2e00;
+    }
+    .dark {
+      background-color: #262626;
+      width: 228px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .medium-text {
+        color: #fff;
+      }
+    }
+  }
+  .buy {
+    width: 893px;
+    height: 460px;
+    background-color: #416adc;
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px 0;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #fff;
+    }
+    &-info {
+      text-transform: uppercase;
+    }
+    .shop {
+      background-color: blue;
+      width: 243px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-now {
+      margin-left: 8px;
+      text-transform: uppercase;
+    }
+  }
+}
